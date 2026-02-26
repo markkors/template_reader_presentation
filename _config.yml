@@ -1,0 +1,20 @@
+title: [titel here]
+description: [course description]
+author: [author here]
+company: ROC-Midden Nederland
+department: ICT-College
+education: MBO Niveau 4
+location: Amersfoort, Nederland
+baseurl: "/Repository_name_in_Github"
+theme: minima
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+plugins:
+  - jekyll-feed

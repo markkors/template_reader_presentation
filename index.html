@@ -1,0 +1,94 @@
+---
+---
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Naam] Tutorial / Onderwerp</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+  <style>
+    /* Tiles grid layout */
+    .tutorial-list ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    /* Basis styling van een tile */
+    .tile {
+      background: var(--tile-bg, #f9f9f9);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .tile:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Reader link = hoofdonderwerp */
+    .reader-link {
+      display: block;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #222;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Presentatie-link = ondergeschikt, kleiner */
+    .presentation-link {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #555;
+      text-decoration: none;
+      border-top: 1px solid #ddd;
+      padding-top: 0.4rem;
+      margin-top: 0.3rem;
+    }
+
+    .presentation-link:hover {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="{{ '/assets/images/logo_ict_college_transparant.png' | relative_url }}" alt="ROC ICA Logo" class="logo">
+    <h1>Kop Tutorial</h1>
+  </header>
+
+  <main>
+    <nav class="tutorial-list">
+      <ul>
+        <li class="tile">
+          <a href="{{ '/Reader_example.html' | relative_url }}" class="reader-link">
+            1. Reader voorbeeld
+          </a>
+          <a href="{{ '/presentatie/Presentatie-default.html' | relative_url }}" class="presentation-link">
+            📽️ Presentatie
+          </a>
+        </li>
+    </nav>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 {{ site.company }} – {{ site.department }} – {{ site.location }}</p>
+      <p>{{ site.education }}</p>
+    </div>
+  </footer>
+</body>
+
+</html>

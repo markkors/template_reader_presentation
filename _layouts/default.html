@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {{ site.stylesheet }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <h1>.... Tutorial</h1>
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/logo_ict_college_transparant.png' | relative_url }}" 
+             alt="ROC ICA Logo" class="logo">
+      </a>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 {{ site.company }} – {{ site.department }} – {{ site.location }}</p>
+        <p>{{ site.education }}</p>
+        <p>{{ site.title }} – {{ page.title }}</p>
+      </div>
+    </footer>
+  </body>
+</html>
