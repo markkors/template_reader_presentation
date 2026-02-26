@@ -1,4 +1,4 @@
-# Handleiding: Digitale Reader aanmaken (voor beginners)
+# Handleiding: Digitale Reader aanmaken 
 
 ## Wat is dit systeem?
 
