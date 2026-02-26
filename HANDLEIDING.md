@@ -155,3 +155,16 @@ Bestand bewerken in GitHub → Commit → GitHub bouwt automatisch → Website i
 ```
 
 Geen software nodig. Geen installaties. Alles via de browser.
+
+---
+
+## Lokaal testen (optioneel)
+
+Wil je wijzigingen bekijken **zonder elke keer naar GitHub te pushen**? Dan kun je Jekyll lokaal installeren en de site op je eigen computer draaien.
+
+Zie hiervoor: [Yekill.md](Yekill.md)
+
+---
+
+Vragen? 
+Mark Kors, ROC ICA, 2026
