@@ -5,7 +5,8 @@ company: ROC-Midden Nederland
 department: ICT-College
 education: MBO Niveau 4
 location: Amersfoort, Nederland
-baseurl: "/Repository_name_in_Github"
+baseurl: "/template_reader_presentation"
+repository: markkors/template_reader_presentation
 theme: minima
 markdown: kramdown
 highlighter: rouge
